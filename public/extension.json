@@ -1,0 +1,31 @@
+{
+  "name": "Carbon",
+  "description": "Create and share beautiful images of your source code",
+  "icon": "/static/icons/icon.png",
+  "tags": ["carbon.now.sh", "images", "export"],
+  "scopes": [
+    {
+      "name": "read",
+      "reason": "Read the file you select to create an image for"
+    },
+    {
+      "name": "write-exec",
+      "reason": "Export the resulting image to your Repl"
+    }
+  ],
+  "fileHandlers": [
+    {
+      "name": "Carbon",
+      "icon": "/static/icons/icon.svg",
+      "handler": "/",
+      "glob": "**/*"
+    }
+  ],
+  "longDescription": "Create and share beautiful images of your source code using carbon.now.sh, built straight into your Repl.\n\nAll you have to do is open the context menu of a file in your Repl, click `Open with Carbon` and boom. Instantaneous code snapshots.\n\nThis extension is unofficial and not related with the carbon.now.sh team at all.",
+  "coverImages": [
+    {
+      "path": "/static/cover-image.png",
+      "label": "preview of extension"
+    }
+  ]
+}
